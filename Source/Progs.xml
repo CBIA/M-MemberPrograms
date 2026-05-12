@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Application>
+
+  <Header>
+    <Version val="14080.00"/>
+    <WithIsn val="Y"/>
+    <Exe comp="-1"/>
+    <LastIsn val="187"/>
+    <LastIsnFolder val="1"/>
+    <Folders>
+      <Folder id="1">
+        <Name val="Debug"/>
+      </Folder>
+    </Folders>
+  </Header>
+
+  <ProgramsRepositoryOutLine>
+    <Programs>
+      <Program id="1"/>
+      <Program id="2"/>
+      <Program id="3"/>
+      <Program id="31"/>
+      <Program id="34"/>
+      <Program id="35"/>
+      <Program id="36"/>
+      <Program id="37"/>
+      <Program id="38"/>
+      <Program id="4"/>
+      <Program id="5"/>
+      <Program id="6"/>
+      <Program id="7"/>
+      <Program id="8"/>
+      <Program id="52"/>
+      <Program id="76"/>
+      <Program id="80"/>
+      <Program id="9"/>
+      <Program id="10"/>
+      <Program id="11"/>
+      <Program id="12"/>
+      <Program id="13"/>
+      <Program id="14"/>
+      <Program id="24"/>
+      <Program id="27"/>
+      <Program id="16"/>
+      <Program id="17"/>
+      <Program id="19"/>
+      <Program id="20"/>
+      <Program id="23"/>
+      <Program id="33"/>
+      <Program id="60"/>
+      <Program id="21"/>
+      <Program id="22"/>
+      <Program id="39"/>
+      <Program id="59"/>
+      <Program id="61"/>
+      <Program id="62"/>
+      <Program id="63"/>
+      <Program id="65"/>
+      <Program id="67"/>
+      <Program id="77"/>
+      <Program id="78"/>
+      <Program id="79"/>
+      <Program id="131"/>
+      <Program id="149"/>
+      <Program id="66"/>
+      <Program id="74"/>
+      <Program id="88"/>
+      <Program id="87"/>
+      <Program id="150"/>
+      <Program id="90"/>
+      <Program id="91"/>
+      <Program id="154"/>
+      <Program id="162"/>
+      <Program id="164"/>
+      <Program id="165"/>
+      <Program id="166"/>
+      <Program id="167"/>
+      <Program id="169"/>
+      <Program id="170"/>
+      <Program id="175"/>
+      <Program id="178"/>
+      <Program id="177"/>
+      <Program id="172"/>
+      <Program id="187"/>
+      <Program id="181"/>
+      <Program id="180"/>
+      <Program id="183"/>
+      <Program id="184"/>
+      <Program id="185"/>
+      <Program id="186"/>
+      <Program id="153"/>
+      <Program id="69"/>
+      <Program id="94"/>
+      <Program id="148"/>
+      <Program id="151"/>
+      <Program id="157"/>
+      <Program id="158"/>
+      <Program id="159"/>
+      <Program id="168"/>
+      <Program id="173"/>
+      <Program id="179"/>
+      <Program id="182"/>
+    </Programs>
+  </ProgramsRepositoryOutLine>
+
+</Application>

@@ -27,7 +27,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739855" _time="41022" date="08/27/2026" time="11:23:42"/>
+          <LastModified _date="739869" _time="38612" date="09/10/2026" time="10:43:32"/>
         </Header>
         <ItemIsn val="25"/>
         <Resource>
@@ -704,9 +704,9 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739855" _time="41022" date="08/27/2026" time="11:23:42"/>
+            <LastModified _date="739869" _time="38612" date="09/10/2026" time="10:43:32"/>
           </Header>
-          <ItemIsn val="22"/>
+          <ItemIsn val="23"/>
           <Resource>
             <DB id="1">
               <DataObject comp="-1" obj="93"/>
@@ -795,7 +795,7 @@
                   </DATAVIEW_SRC>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="2" Key="1" Mode="A" SortType="3" VIEW="1" VIEWS="20">
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="2" Key="1" Mode="A" SortType="3" VIEW="1" VIEWS="21">
                     <DB comp="-1" obj="93"/>
                     <Condition val="Y"/>
                   </LNK>
@@ -1043,6 +1043,18 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
+                  <Select FieldID="23" FlowIsn="75" id="23">
+                    <Column val="21"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
                   <END_LINK FlowIsn="3"/>
                 </LogicLine>
               </LogicLines>
@@ -1268,6 +1280,17 @@
                     <Direction val="C"/>
                   </Update>
                 </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="76">
+                    <FieldID val="23"/>
+                    <WithValue val="27"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
@@ -1358,6 +1381,10 @@
             </Expression>
             <Expression id="26">
               <ExpSyntax val="{1,25}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="27">
+              <ExpSyntax val="{1,1}"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>

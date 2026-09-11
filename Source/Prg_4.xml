@@ -32,7 +32,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738615" _time="40870" date="04/05/2023" time="11:21:10"/>
+          <LastModified _date="739863" _time="51179" date="09/04/2026" time="14:12:59"/>
         </Header>
         <ItemIsn val="8"/>
         <Resource>
@@ -626,18 +626,6 @@
           </Expression>
           <Expression id="11">
             <ExpSyntax val="Left ({0,3},{0,4}-1)&amp;{0,6}"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="12">
-            <ExpSyntax val="'E'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="13">
-            <ExpSyntax val="'06107'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="14">
-            <ExpSyntax val="'c:\temporaryfolder\file.txt'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

@@ -27,12 +27,12 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739855" _time="41691" date="08/27/2026" time="11:34:51"/>
+          <LastModified _date="739869" _time="39637" date="09/10/2026" time="11:00:37"/>
         </Header>
-        <ItemIsn val="28"/>
+        <ItemIsn val="29"/>
         <Resource>
           <DB id="2">
-            <DataObject comp="-1" obj="99"/>
+            <DataObject comp="-1" obj="103"/>
             <Access val="R"/>
             <Share val="W"/>
             <Open val="N"/>
@@ -389,6 +389,18 @@
                 </Select>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="29" FlowIsn="63" id="29">
+                  <Column val="21"/>
+                  <Type val="R"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="N"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Remark FlowIsn="21">
                   <Type val="0"/>
                   <Text val=" "/>
@@ -407,8 +419,8 @@
                 </Select>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FieldID="20" FlowIsn="23" Key="1" Mode="R" SortType="24" VIEW="22" VIEWS="2">
-                  <DB comp="-1" obj="99"/>
+                <LNK Direction="A" EVL_CND="R" FieldID="20" FlowIsn="23" Key="1" Mode="R" SortType="24" VIEW="23" VIEWS="2">
+                  <DB comp="-1" obj="103"/>
                   <Condition val="Y"/>
                 </LNK>
               </LogicLine>
@@ -448,7 +460,7 @@
                 </Remark>
               </LogicLine>
               <LogicLine>
-                <LNK Direction="A" EVL_CND="R" FlowIsn="35" Key="1" Mode="R" SortType="36" VIEW="24" VIEWS="2">
+                <LNK Direction="A" EVL_CND="R" FlowIsn="35" Key="1" Mode="R" SortType="36" VIEW="25" VIEWS="2">
                   <DB comp="-1" obj="94"/>
                   <Condition val="Y"/>
                 </LNK>
@@ -563,12 +575,12 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739855" _time="41130" date="08/27/2026" time="11:25:30"/>
+            <LastModified _date="739869" _time="38784" date="09/10/2026" time="10:46:24"/>
           </Header>
-          <ItemIsn val="21"/>
+          <ItemIsn val="24"/>
           <Resource>
             <DB id="1">
-              <DataObject comp="-1" obj="99"/>
+              <DataObject comp="-1" obj="103"/>
               <Access val="W"/>
               <Share val="W"/>
               <Open val="N"/>
@@ -654,8 +666,8 @@
                   </DATAVIEW_SRC>
                 </LogicLine>
                 <LogicLine>
-                  <LNK Direction="A" EVL_CND="R" FlowIsn="2" Key="1" Mode="A" SortType="3" VIEW="1" VIEWS="20">
-                    <DB comp="-1" obj="99"/>
+                  <LNK Direction="A" EVL_CND="R" FlowIsn="2" Key="1" Mode="A" SortType="3" VIEW="1" VIEWS="22">
+                    <DB comp="-1" obj="103"/>
                     <Condition val="Y"/>
                   </LNK>
                 </LogicLine>
@@ -902,6 +914,30 @@
                   </Select>
                 </LogicLine>
                 <LogicLine>
+                  <Select FieldID="22" FlowIsn="61" id="22">
+                    <Column val="21"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
+                  <Select FieldID="24" FlowIsn="81" id="24">
+                    <Column val="22"/>
+                    <Type val="R"/>
+                    <ExposedToRoute val="N"/>
+                    <IsParameter val="N"/>
+                    <DIFF_UPDATE val="T"/>
+                    <Condition val="N"/>
+                    <Modifier val="S"/>
+                    <Direction val="C"/>
+                  </Select>
+                </LogicLine>
+                <LogicLine>
                   <END_LINK FlowIsn="3"/>
                 </LogicLine>
               </LogicLines>
@@ -1115,6 +1151,28 @@
                     <Direction val="C"/>
                   </Update>
                 </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="82">
+                    <FieldID val="22"/>
+                    <WithValue val="22"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="83">
+                    <FieldID val="24"/>
+                    <WithValue val="23"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
@@ -1205,6 +1263,14 @@
             </Expression>
             <Expression id="21">
               <ExpSyntax val="{1,27}"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="22">
+              <ExpSyntax val="''"/>
+              <ExpAttribute val="A"/>
+            </Expression>
+            <Expression id="23">
+              <ExpSyntax val="{1,29}"/>
               <ExpAttribute val="A"/>
             </Expression>
           </Expressions>

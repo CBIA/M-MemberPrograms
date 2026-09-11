@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739763" _time="54257" date="05/27/2026" time="15:04:17"/>
+          <LastModified _date="739863" _time="51184" date="09/04/2026" time="14:13:04"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -217,7 +217,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739762" _time="60839" date="05/26/2026" time="16:53:59"/>
+            <LastModified _date="739863" _time="51184" date="09/04/2026" time="14:13:04"/>
           </Header>
           <ItemIsn val="43"/>
           <Resource>
@@ -2040,10 +2040,6 @@
             <Expression id="6">
               <ExpSyntax val="''"/>
               <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="7">
-              <ExpSyntax val="Counter(0)>100"/>
-              <ExpAttribute val="B"/>
             </Expression>
             <Expression id="8">
               <ExpSyntax val="DStr({0,17},'YYYYMMDD')"/>

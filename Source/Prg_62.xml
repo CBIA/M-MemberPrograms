@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CDS Account Search" ISN_2="1" LastIsn="6" id="62">
+        <Header Description="CDS Account Search" ISN_2="1" LastIsn="7" id="62">
           <Public val="CDSAccountSearch"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -31,7 +31,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738693" _time="64766" date="06/22/2023" time="17:59:26"/>
+          <LastModified _date="739863" _time="51188" date="09/04/2026" time="14:13:08"/>
         </Header>
         <ItemIsn val="15"/>
         <Resource>
@@ -788,7 +788,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Read Account Table SQL" ISN_2="4" LastIsn="6" id="62">
+          <Header Description="Read Account Table SQL" ISN_2="4" LastIsn="7" id="62">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="Y"/>
@@ -801,7 +801,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="738693" _time="64766" date="06/22/2023" time="17:59:26"/>
+            <LastModified _date="739863" _time="51188" date="09/04/2026" time="14:13:08"/>
           </Header>
           <ItemIsn val="19"/>
           <Resource>
@@ -2236,10 +2236,6 @@
             </Expression>
             <Expression id="20">
               <ExpSyntax val="'CDSAccountSearch'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="21">
-              <ExpSyntax val="'CDSEmailLog'"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="22">

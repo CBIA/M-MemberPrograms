@@ -28,7 +28,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738721" _time="63205" date="07/20/2023" time="17:33:25"/>
+          <LastModified _date="739863" _time="51191" date="09/04/2026" time="14:13:11"/>
         </Header>
         <ItemIsn val="1"/>
         <Resource>
@@ -269,14 +269,6 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="'BounceEmailAPIDriver'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="2">
-            <ExpSyntax val="Translate('%CRRPATH%PostmarkAPI\PostmarkAPI.ecf')"/>
-            <ExpAttribute val="A"/>
-          </Expression>
           <Expression id="3">
             <ExpSyntax val="Left(Trim({0,1}),6)='172.16'"/>
             <ExpAttribute val="B"/>
@@ -287,10 +279,6 @@
           </Expression>
           <Expression id="5">
             <ExpSyntax val="'C:\temporaryfolder\NewMemberProcessDriver.txt'"/>
-            <ExpAttribute val="A"/>
-          </Expression>
-          <Expression id="6">
-            <ExpSyntax val="'\\cbia-data2\appls\gigadeploy\v48\prod\memberprograms\trackingbounce.txt'"/>
             <ExpAttribute val="A"/>
           </Expression>
         </Expressions>

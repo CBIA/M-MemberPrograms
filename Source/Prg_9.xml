@@ -34,7 +34,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739775" _time="53538" date="06/08/2026" time="14:52:18"/>
+          <LastModified _date="739863" _time="51183" date="09/04/2026" time="14:13:03"/>
         </Header>
         <ItemIsn val="13"/>
         <Resource>
@@ -582,7 +582,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739775" _time="52812" date="06/08/2026" time="14:40:12"/>
+            <LastModified _date="739863" _time="51183" date="09/04/2026" time="14:13:03"/>
           </Header>
           <ItemIsn val="8"/>
           <Resource>
@@ -1183,10 +1183,6 @@
             </FormEntry>
           </TaskForms>
           <Expressions>
-            <Expression id="1">
-              <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>&#xD;&#xA;    &lt;attribute name=&quot;name&quot; />&lt;attribute name=&quot;primarycontactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&lt;attribute name=&quot;pa_member&quot; />&#xD;&#xA;    &lt;attribute name=&quot;accountnumber&quot; />&lt;attribute name=&quot;accountid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;websiteurl&quot; />&lt;attribute name=&quot;cbia_typeofbusiness&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_totalemployees&quot; />&lt;attribute name=&quot;cbia_sicdescription&quot; />&#xD;&#xA;    &lt;attribute name=&quot;sic&quot; />&lt;attribute name=&quot;fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_familyownedbusiness&quot; />&lt;attribute name=&quot;numberofemployees&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&lt;attribute name=&quot;address2_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_line2&quot; />&lt;attribute name=&quot;address2_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_stateorprovince&quot; />&lt;attribute name=&quot;address2_postalcode&quot; />&#xD;&#xA;    &lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;'&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&lt;/entity>&lt;/fetch>'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
             <Expression id="2">
               <ExpSyntax val="'c:\temporaryfolder\printjson.txt'"/>
               <ExpAttribute val="A"/>
@@ -1229,10 +1225,6 @@
             </Expression>
             <Expression id="13">
               <ExpSyntax val="'    &lt;attribute name=&quot;name&quot; />&lt;attribute name=&quot;primarycontactid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;telephone1&quot; />&lt;attribute name=&quot;pa_member&quot; />&#xD;&#xA;    &lt;attribute name=&quot;accountnumber&quot; />&lt;attribute name=&quot;accountid&quot; />&#xD;&#xA;    &lt;attribute name=&quot;websiteurl&quot; />&lt;attribute name=&quot;cbia_typeofbusiness&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_totalemployees&quot; />&lt;attribute name=&quot;cbia_sicdescription&quot; />&#xD;&#xA;    &lt;attribute name=&quot;sic&quot; />&lt;attribute name=&quot;fax&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_familyownedbusiness&quot; />&lt;attribute name=&quot;cbia_minorityowned&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_veteranowned&quot; />&lt;attribute name=&quot;cbia_womanowned&quot; />&lt;attribute name=&quot;numberofemployees&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_line1&quot; />&lt;attribute name=&quot;address1_line2&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_city&quot; />&lt;attribute name=&quot;address1_stateorprovince&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address1_postalcode&quot; />&lt;attribute name=&quot;address2_line1&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_line2&quot; />&lt;attribute name=&quot;address2_city&quot; />&#xD;&#xA;    &lt;attribute name=&quot;address2_stateorprovince&quot; />&lt;attribute name=&quot;address2_postalcode&quot; />&#xD;&#xA;    &lt;attribute name=&quot;cbia_advocacymember&quot; />'"/>
-              <ExpAttribute val="A"/>
-            </Expression>
-            <Expression id="14">
-              <ExpSyntax val="'&lt;fetch version=&quot;1.0&quot; output-format=&quot;xml-platform&quot; mapping=&quot;logical&quot; distinct=&quot;true&quot;>&#xD;&#xA;  &lt;entity name=&quot;account&quot;>'&amp;Trim({0,8})&amp;&#xD;&#xA;   '&lt;order attribute=&quot;name&quot; descending=&quot;false&quot; />&#xD;&#xA;    &lt;filter type=&quot;and&quot;>&#xD;&#xA;      &lt;condition attribute=&quot;pa_member&quot; operator=&quot;eq&quot; value=&quot;1&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;parentaccountid&quot; operator=&quot;null&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;6107&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;56774&quot; />&#xD;&#xA;      &lt;condition attribute=&quot;accountnumber&quot; operator=&quot;ne&quot; value=&quot;67590&quot; />'&amp;&#xD;&#xA;      Trim({1,3})&amp;'&lt;/filter>&#xD;&#xA;    &lt;link-entity name=&quot;pa_renewalbilling&quot; from=&quot;pa_customerid&quot; to=&quot;accountid&quot; link-type=&quot;inner&quot; alias=&quot;rb&quot;>&#xD;&#xA;      &lt;filter type=&quot;and&quot;>&#xD;&#xA;        &lt;condition attribute=&quot;pa_benefitid&quot; operator=&quot;eq&quot; uiname=&quot;Membership&#xD;&#xA;Dues&quot; uitype=&quot;pa_benefit&quot; value=&quot;{D52A1E61-6634-DC11-B404-00505683144F}&quot; />'&amp;&#xD;&#xA; Trim({1,9})&amp;Trim({1,10})&#xD;&#xA;      &amp;'&lt;/filter>&#xD;&#xA;    &lt;attribute name=&quot;pa_benefitid&quot; />&lt;attribute name=&quot;pa_daterenewed&quot; />&#xD;&#xA;    &lt;/link-entity>&lt;/entity>&lt;/fetch>'"/>
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="15">

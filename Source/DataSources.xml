@@ -8,7 +8,7 @@
 
   <Exe comp="-1"/>
 
-  <LastIsn val="101"/>
+  <LastIsn val="103"/>
 
   <LastIsnFolder val="2"/>
 
@@ -6529,7 +6529,7 @@
   <WebS/>
 
 </DataObject> 
-<DataObject PhysicalName="Cvent_CRM_Extract" Resident="N" UniqueISNConvState="12" data_source="INHOUSEWEBSQL" id="99" name="Cvent_CRM_Extract">
+<DataObject PhysicalName="Cvent_CRM_Extract" Resident="N" UniqueISNConvState="12" data_source="INHOUSEWEBSQL" id="103" name="Cvent_CRM_Extract">
 
   <Encrypt val="N"/>
 
@@ -6952,6 +6952,46 @@
         <DatabaseInformation id="177"/>
         <DbColumnName id="178" val="[Meeting Name]"/>
         <Type id="179" val="VARCHAR(150)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="Cvent_Synced">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="3"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Cvent_Synced"/>
+        <Type id="179" val="VARCHAR(3)"/>
+        <UserType id="180"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="22" name="Attendee_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Attendee_ID"/>
+        <Type id="179" val="VARCHAR(50)"/>
         <UserType id="180"/>
         <PartOfDatetime id="244"/>
       </PropertyList>
@@ -10242,6 +10282,17 @@
         <Definition id="175" val="2"/>
         <_Flip id="194"/>
         <_FieldPhysical PIC_U="20" Size="20" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="id">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="36"/>
+        <StoredAs id="173" val="1"/>
+        <Size id="174" val="36"/>
+        <Definition id="175" val="2"/>
+        <_Flip id="194"/>
+        <_FieldPhysical PIC_U="36" Size="36" allowed_null="N" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="1" translate="1"/>
       </PropertyList>
     </Column>
   </Columns>

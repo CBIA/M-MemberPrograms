@@ -35,7 +35,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739768" _time="50771" date="06/01/2026" time="14:06:11"/>
+          <LastModified _date="739863" _time="51051" date="09/04/2026" time="14:10:51"/>
         </Header>
         <ItemIsn val="18"/>
         <Resource>
@@ -6840,7 +6840,7 @@
                 <External val="N"/>
                 <FormType val="N"/>
                 <DotNetObjectExists val="N"/>
-                <LastModified _date="739768" _time="50751" date="06/01/2026" time="14:05:51"/>
+                <LastModified _date="739863" _time="51051" date="09/04/2026" time="14:10:51"/>
               </Header>
               <ItemIsn val="6"/>
               <Resource>
@@ -6938,7 +6938,7 @@
                         <ExposedToRoute val="N"/>
                         <IsParameter val="N"/>
                         <Range MAX="1" MIN="1"/>
-                        <_DitIndexForToolkit val="9"/>
+                        <_DitIndexForToolkit val="8"/>
                         <DIFF_UPDATE val="T"/>
                         <Condition val="Y"/>
                         <Modifier val="S"/>
@@ -6952,7 +6952,7 @@
                         <ExposedToRoute val="N"/>
                         <IsParameter val="N"/>
                         <Range MAX="2" MIN="2"/>
-                        <_DitIndexForToolkit val="10"/>
+                        <_DitIndexForToolkit val="9"/>
                         <DIFF_UPDATE val="T"/>
                         <Condition val="Y"/>
                         <Modifier val="S"/>
@@ -6966,7 +6966,7 @@
                         <ExposedToRoute val="N"/>
                         <IsParameter val="N"/>
                         <Range MAX="3" MIN="3"/>
-                        <_DitIndexForToolkit val="11"/>
+                        <_DitIndexForToolkit val="10"/>
                         <DIFF_UPDATE val="T"/>
                         <Condition val="Y"/>
                         <Modifier val="S"/>
@@ -6980,7 +6980,7 @@
                         <ExposedToRoute val="N"/>
                         <IsParameter val="N"/>
                         <Range MAX="4" MIN="4"/>
-                        <_DitIndexForToolkit val="12"/>
+                        <_DitIndexForToolkit val="11"/>
                         <DIFF_UPDATE val="T"/>
                         <Condition val="Y"/>
                         <Modifier val="S"/>
@@ -7050,7 +7050,7 @@
                       <Data FieldID="48" Parent="3" id="43"/>
                       <ControlName id="46" val="v-new list SQL IN statement"/>
                       <_Orientation id="143"/>
-                      <TabOrder id="314" val="6"/>
+                      <TabOrder id="314" val="5"/>
                     </PropertyList>
                   </Control>
                   <Control _test_id="1" id="1">
@@ -7062,7 +7062,7 @@
                       <Height id="24" val="79"/>
                       <TitleHeight id="79" val="12"/>
                       <RowHeight id="80" val="13"/>
-                      <Elements id="81" val="5"/>
+                      <Elements id="81" val="4"/>
                       <MultiMarking id="196"/>
                       <_WindowWidth id="241" val="576"/>
                     </PropertyList>
@@ -7094,13 +7094,6 @@
                       <Width id="23" val="84"/>
                       <ControlLayer id="25" val="4"/>
                       <ColumnTitle id="139" valUnicode="ContactSS_PersonID"/>
-                    </PropertyList>
-                  </Control>
-                  <Control ISN_FATHER="1" PDOD="128" _test_id="11" id="11">
-                    <PropertyList model="CTRL_GUI0_COLUMN">
-                      <Width id="23" val="105"/>
-                      <ControlLayer id="25" val="5"/>
-                      <ColumnTitle id="139" valUnicode="ContactSS_ContactTypeId"/>
                     </PropertyList>
                   </Control>
                   <Control ISN_FATHER="1" _test_id="2" id="2">
@@ -7176,22 +7169,6 @@
                       <Style id="63" val="1"/>
                       <_Orientation id="143"/>
                       <TabOrder id="314" val="4"/>
-                      <Border id="452"/>
-                    </PropertyList>
-                  </Control>
-                  <Control ISN_FATHER="1" PDOD="128" _test_id="6" id="6">
-                    <PropertyList model="CTRL_GUI0_EDIT">
-                      <Placement bottom="100" id="20" right="100"/>
-                      <X id="21" val="466"/>
-                      <Y id="22" val="23"/>
-                      <Width id="23" val="14"/>
-                      <Height id="24" val="10"/>
-                      <ControlLayer id="25" val="5"/>
-                      <Data id="43"/>
-                      <ControlName id="46" val="ContactSS_ContactTypeId"/>
-                      <Style id="63" val="1"/>
-                      <_Orientation id="143"/>
-                      <TabOrder id="314" val="5"/>
                       <Border id="452"/>
                     </PropertyList>
                   </Control>

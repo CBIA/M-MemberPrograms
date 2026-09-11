@@ -13,7 +13,7 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="CDS MAIN FORM" ISN_2="1" LastIsn="40" id="14">
+        <Header Description="CDS MAIN FORM" ISN_2="1" LastIsn="41" id="14">
           <Public val="CDSForm"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
@@ -33,7 +33,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739812" _time="55949" date="07/15/2026" time="15:32:29"/>
+          <LastModified _date="739863" _time="51185" date="09/04/2026" time="14:13:05"/>
         </Header>
         <ItemIsn val="19"/>
         <Resource>
@@ -865,7 +865,7 @@
           </Expression>
         </Expressions>
         <Task MainProgram="N">
-          <Header Description="Read Account Info" ISN_2="2" LastIsn="40" id="14">
+          <Header Description="Read Account Info" ISN_2="2" LastIsn="41" id="14">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -3590,7 +3590,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Read Contact Info" ISN_2="3" LastIsn="40" id="14">
+          <Header Description="Read Contact Info" ISN_2="3" LastIsn="41" id="14">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -3603,7 +3603,7 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739812" _time="55746" date="07/15/2026" time="15:29:06"/>
+            <LastModified _date="739863" _time="51185" date="09/04/2026" time="14:13:05"/>
           </Header>
           <ItemIsn val="57"/>
           <Resource>
@@ -6344,16 +6344,12 @@
               <ExpSyntax val="{0,50} AND NOT ({0,37})"/>
               <ExpAttribute val="B"/>
             </Expression>
-            <Expression id="55">
-              <ExpSyntax val="NOT ({0,37})"/>
-              <ExpAttribute val="B"/>
-            </Expression>
           </Expressions>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="1" id="1"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="2" id="2"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
           <Task MainProgram="N">
-            <Header Description="Current contact type" ISN_2="7" LastIsn="40" id="14">
+            <Header Description="Current contact type" ISN_2="7" LastIsn="41" id="14">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -6492,7 +6488,7 @@
               </FormEntry>
             </TaskForms>
             <Task MainProgram="N">
-              <Header Description="Read contact type xref" ISN_2="29" LastIsn="40" id="14">
+              <Header Description="Read contact type xref" ISN_2="29" LastIsn="41" id="14">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -7291,7 +7287,7 @@
             </Task>
           </Task>
           <Task MainProgram="N">
-            <Header Description="New contact type" ISN_2="17" LastIsn="40" id="14">
+            <Header Description="New contact type" ISN_2="17" LastIsn="41" id="14">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -7536,7 +7532,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="has new type record" ISN_2="35" LastIsn="40" id="14">
+              <Header Description="has new type record" ISN_2="35" LastIsn="41" id="14">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -7928,7 +7924,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="has remove all type record" ISN_2="40" LastIsn="40" id="14">
+              <Header Description="has remove all type record" ISN_2="40" LastIsn="41" id="14">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -8281,7 +8277,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Read contact type xref" ISN_2="32" LastIsn="40" id="14">
+              <Header Description="Read contact type xref" ISN_2="32" LastIsn="41" id="14">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -9216,7 +9212,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Read New Contact" ISN_2="22" LastIsn="40" id="14">
+          <Header Description="Read New Contact" ISN_2="22" LastIsn="41" id="14">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -9871,7 +9867,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="3" id="3"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="50" id="4"/>
           <Task MainProgram="N">
-            <Header Description="New contact type" ISN_2="26" LastIsn="40" id="14">
+            <Header Description="New contact type" ISN_2="26" LastIsn="41" id="14">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>
@@ -10028,7 +10024,7 @@
               </Expression>
             </Expressions>
             <Task MainProgram="N">
-              <Header Description="Derive sql in statement" ISN_2="27" LastIsn="40" id="14">
+              <Header Description="Derive sql in statement" ISN_2="27" LastIsn="41" id="14">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="N"/>
@@ -10508,7 +10504,7 @@
               <VarRangeInfo Mode="E" VarRangeVeeIsn="4" id="4"/>
             </Task>
             <Task MainProgram="N">
-              <Header Description="Create contact type list in html" ISN_2="28" LastIsn="40" id="14">
+              <Header Description="Create contact type list in html" ISN_2="28" LastIsn="41" id="14">
                 <ExecutionRight comp="-1"/>
                 <Resident val="N"/>
                 <SQL val="Y"/>
@@ -10747,7 +10743,7 @@
           </Task>
         </Task>
         <Task MainProgram="N">
-          <Header Description="Derive missing contact types" ISN_2="36" LastIsn="40" id="14">
+          <Header Description="Derive missing contact types" ISN_2="36" LastIsn="41" id="14">
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -11194,7 +11190,7 @@
           <VarRangeInfo Mode="E" VarRangeVeeIsn="11" id="4"/>
           <VarRangeInfo Mode="E" VarRangeVeeIsn="12" id="5"/>
           <Task MainProgram="N">
-            <Header Description="Loop thru all contacts" ISN_2="37" LastIsn="40" id="14">
+            <Header Description="Loop thru all contacts" ISN_2="37" LastIsn="41" id="14">
               <ExecutionRight comp="-1"/>
               <Resident val="N"/>
               <SQL val="N"/>

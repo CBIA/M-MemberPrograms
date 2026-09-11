@@ -30,7 +30,7 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="738627" _time="54502" date="04/17/2023" time="15:08:22"/>
+          <LastModified _date="739868" _time="40238" date="09/09/2026" time="11:10:38"/>
         </Header>
         <ItemIsn val="2"/>
         <Resource>
@@ -78,7 +78,7 @@
             <TransactionMode val="P"/>
             <TransactionBegin val="T"/>
             <PreloadView val="N"/>
-            <AllowEmptyDataview val="Y"/>
+            <AllowEmptyDataview val="N"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
@@ -176,31 +176,9 @@
             </Event>
             <LogicLines>
               <LogicLine>
-                <Update FlowIsn="6">
-                  <FieldID val="2"/>
-                  <WithValue val="1"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
-                <Update FlowIsn="7">
-                  <FieldID val="2"/>
-                  <WithValue val="2"/>
-                  <Incremental val="N"/>
-                  <ForcedUpdate val="Y"/>
-                  <Condition Exp="5"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </Update>
-              </LogicLine>
-              <LogicLine>
                 <Update FlowIsn="8">
                   <FieldID val="1"/>
-                  <WithValue val="3"/>
+                  <WithValue val="6"/>
                   <Incremental val="N"/>
                   <ForcedUpdate val="Y"/>
                   <Condition val="Y"/>
@@ -264,24 +242,12 @@
           </FormEntry>
         </TaskForms>
         <Expressions>
-          <Expression id="1">
-            <ExpSyntax val="FileListGet ('\\web1\inetpub\www2cbiaroot\ieb\ag\','*.*','FALSE'LOG)"/>
-            <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="2">
-            <ExpSyntax val="FileListGet ('F:\ieb\ag\','*.*','FALSE'LOG)"/>
-            <ExpAttribute val="O"/>
-          </Expression>
-          <Expression id="3">
-            <ExpSyntax val="VecSize ({0,2})>0"/>
-            <ExpAttribute val="B"/>
-          </Expression>
           <Expression id="4">
             <ExpSyntax val="VecSize({0,2})"/>
             <ExpAttribute val="N"/>
           </Expression>
-          <Expression id="5">
-            <ExpSyntax val="VecSize({0,2})=0"/>
+          <Expression id="6">
+            <ExpSyntax val="'TRUE'LOG"/>
             <ExpAttribute val="B"/>
           </Expression>
         </Expressions>

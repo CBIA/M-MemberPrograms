@@ -13,30 +13,39 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Update attendee sync status" ISN_2="1" LastIsn="2" id="242">
-          <Public val="UpdateCventSyncStatus"/>
+        <Header Description="Update attendee sync status black box" ISN_2="1" LastIsn="2" id="242">
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
           <ReturnValue>
             <ReturnValueAttr/>
-            <TSK_PARAMS val="2"/>
+            <TSK_PARAMS val="3"/>
             <ParametersAttributes>
               <Attr MgAttr="A"/>
               <Attr MgAttr="A"/>
+              <Attr MgAttr="B"/>
             </ParametersAttributes>
           </ReturnValue>
           <SqlWhereExist val="N"/>
           <TaskType val="B"/>
-          <External val="Y"/>
+          <External val="N"/>
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739863" _time="51195" date="09/04/2026" time="14:13:15"/>
+          <LastModified _date="739873" _time="59198" date="09/14/2026" time="16:26:38"/>
         </Header>
-        <ItemIsn val="2"/>
+        <ItemIsn val="3"/>
         <Resource>
           <Columns>
+            <Column id="3" name="p-bearer token">
+              <PropertyList model="FIELD">
+                <Model attr_obj="FIELD_ALPHA" id="1"/>
+                <Picture id="157" valUnicode="3000"/>
+                <StoredAs id="173" val="1"/>
+                <Size id="174" val="3000"/>
+                <_Flip id="194"/>
+              </PropertyList>
+            </Column>
             <Column id="1" name="p-cvent attendee id">
               <PropertyList model="FIELD">
                 <Model attr_obj="FIELD_ALPHA" id="1"/>
@@ -46,13 +55,10 @@
                 <_Flip id="194"/>
               </PropertyList>
             </Column>
-            <Column id="2" name="p-security token">
+            <Column id="2" name="rp-update successful">
               <PropertyList model="FIELD">
-                <Model attr_obj="FIELD_ALPHA" id="1"/>
-                <Picture id="157" valUnicode="36"/>
-                <StoredAs id="173" val="1"/>
-                <Size id="174" val="36"/>
-                <_Flip id="194"/>
+                <Model attr_obj="FIELD_LOGICAL" id="1"/>
+                <_FieldStyle id="276" val="1"/>
               </PropertyList>
             </Column>
           </Columns>
@@ -80,14 +86,14 @@
             <LockingStrategy val="I"/>
             <CacheStrategy val="T"/>
             <ForceRecordSuffix val="N"/>
-            <TransactionMode val="P"/>
+            <TransactionMode val="W"/>
             <TransactionBegin val="T"/>
             <PreloadView val="N"/>
             <AllowEmptyDataview val="N"/>
             <KeepCreatedContext val="N"/>
           </TaskProperties>
           <SIDE_WIN>
-            <AllowOptions val="N"/>
+            <AllowOptions val="Y"/>
             <AllowQuery val="Y"/>
             <AllowModify val="Y"/>
             <AllowCreate val="Y"/>
@@ -104,7 +110,7 @@
             <AllowPrintingData val="N"/>
           </SIDE_WIN>
           <WIN>
-            <OpenTaskWindow val="N"/>
+            <OpenTaskWindow val="Y"/>
             <CloseTaskWindow val="Y"/>
             <ForegroundWindow val="Y"/>
             <FlipFld val="N"/>
@@ -134,11 +140,25 @@
                 </DATAVIEW_SRC>
               </LogicLine>
               <LogicLine>
+                <Select FieldID="3" FlowIsn="9" id="3">
+                  <Column val="3"/>
+                  <Type val="V"/>
+                  <ExposedToRoute val="N"/>
+                  <IsParameter val="Y"/>
+                  <_DitIndexForToolkit val="2"/>
+                  <DIFF_UPDATE val="T"/>
+                  <Condition val="Y"/>
+                  <Modifier val="S"/>
+                  <Direction val="C"/>
+                </Select>
+              </LogicLine>
+              <LogicLine>
                 <Select FieldID="1" FlowIsn="3" id="1">
                   <Column val="1"/>
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
+                  <_DitIndexForToolkit val="4"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -151,6 +171,7 @@
                   <Type val="V"/>
                   <ExposedToRoute val="N"/>
                   <IsParameter val="Y"/>
+                  <_DitIndexForToolkit val="6"/>
                   <DIFF_UPDATE val="T"/>
                   <Condition val="Y"/>
                   <Modifier val="S"/>
@@ -171,13 +192,6 @@
             </Event>
             <LogicLines>
               <LogicLine>
-                <BLOCK EndBlock="6" EndBlockSegment="6" FlowIsn="5" Type="I">
-                  <Condition val="Y"/>
-                  <Modifier val="B"/>
-                  <Direction val="C"/>
-                </BLOCK>
-              </LogicLine>
-              <LogicLine>
                 <CallTask FlowIsn="7">
                   <OperationType val="T"/>
                   <Event>
@@ -193,18 +207,98 @@
                   <Direction val="C"/>
                 </CallTask>
               </LogicLine>
-              <LogicLine>
-                <END_BLK FlowIsn="6"/>
-              </LogicLine>
             </LogicLines>
           </LogicUnit>
         </TaskLogic>
         <TaskForms>
-          <FormEntry id="1">
+          <FormEntry _last_isn="6" _last_test_id="6" id="1">
             <PropertyList model="FORM_GUI0">
+              <Width id="23" val="818"/>
+              <Height id="24" val="84"/>
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Update attendee sync status"/>
+              <FormName id="311" valUnicode="Update attendee sync status black box"/>
             </PropertyList>
+            <Control _test_id="4" id="4">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="p-bearer token:"/>
+                <X id="21" val="4"/>
+                <Y id="22" val="8"/>
+                <Width id="23" val="59"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="1" id="1">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="3"/>
+                </Model>
+                <X id="21" val="90"/>
+                <Y id="22" val="8"/>
+                <Width id="23" val="2803"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="3" id="43"/>
+                <ControlName id="46" val="p-bearer token"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="1"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="5" id="5">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="p-cvent attendee id:"/>
+                <X id="21" val="4"/>
+                <Y id="22" val="26"/>
+                <Width id="23" val="78"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="2" id="2">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="1"/>
+                </Model>
+                <X id="21" val="90"/>
+                <Y id="22" val="26"/>
+                <Width id="23" val="205"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="1" id="43"/>
+                <ControlName id="46" val="p-cvent attendee id"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="2"/>
+              </PropertyList>
+            </Control>
+            <Control _test_id="6" id="6">
+              <PropertyList model="CTRL_GUI0_STATIC">
+                <Text id="19" valUnicode="rp-update successful:"/>
+                <X id="21" val="4"/>
+                <Y id="22" val="44"/>
+                <Width id="23" val="82"/>
+                <Height id="24" val="9"/>
+                <Style id="63" val="7"/>
+                <EnableRTF id="69"/>
+                <_Orientation id="143"/>
+              </PropertyList>
+            </Control>
+            <Control PDOD="192" _test_id="3" id="3">
+              <PropertyList model="CTRL_GUI0_EDIT">
+                <Model ID="MODEL_GUI_INT" id="1">
+                  <Var FieldID="2"/>
+                </Model>
+                <X id="21" val="90"/>
+                <Y id="22" val="44"/>
+                <Width id="23" val="31"/>
+                <Height id="24" val="10"/>
+                <Data FieldID="2" id="43"/>
+                <ControlName id="46" val="rp-update successful"/>
+                <_Orientation id="143"/>
+                <TabOrder id="314" val="3"/>
+              </PropertyList>
+            </Control>
           </FormEntry>
         </TaskForms>
         <Task MainProgram="N">
@@ -221,20 +315,11 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739861" _time="47544" date="09/02/2026" time="13:12:24"/>
+            <LastModified _date="739873" _time="59198" date="09/14/2026" time="16:26:38"/>
           </Header>
           <ItemIsn val="3"/>
           <Resource>
             <Columns>
-              <Column id="1" name="v-bear token">
-                <PropertyList model="FIELD">
-                  <Model attr_obj="FIELD_ALPHA" id="1"/>
-                  <Picture id="157" valUnicode="3000"/>
-                  <StoredAs id="173" val="1"/>
-                  <Size id="174" val="3000"/>
-                  <_Flip id="194"/>
-                </PropertyList>
-              </Column>
               <Column id="2" name="v-http body">
                 <PropertyList model="FIELD">
                   <Model attr_obj="FIELD_ALPHA" id="1"/>
@@ -339,25 +424,12 @@
                   </DATAVIEW_SRC>
                 </LogicLine>
                 <LogicLine>
-                  <Select FieldID="1" FlowIsn="2" id="1">
-                    <Column val="1"/>
-                    <Type val="V"/>
-                    <ExposedToRoute val="N"/>
-                    <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="2"/>
-                    <DIFF_UPDATE val="T"/>
-                    <Condition val="Y"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </Select>
-                </LogicLine>
-                <LogicLine>
                   <Select FieldID="2" FlowIsn="7" id="2">
                     <Column val="2"/>
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="4"/>
+                    <_DitIndexForToolkit val="2"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -370,7 +442,11 @@
                     <Type val="V"/>
                     <ExposedToRoute val="N"/>
                     <IsParameter val="N"/>
-                    <_DitIndexForToolkit val="7"/>
+                    <INT_DIT_INFO>
+                      <v>10</v>
+                      <v>11</v>
+                    </INT_DIT_INFO>
+                    <_DitIndexForToolkit val="10"/>
                     <DIFF_UPDATE val="T"/>
                     <Condition val="Y"/>
                     <Modifier val="S"/>
@@ -390,28 +466,6 @@
                 <EventType val="S"/>
               </Event>
               <LogicLines>
-                <LogicLine>
-                  <CallTask FlowIsn="3">
-                    <OperationType val="P"/>
-                    <Event>
-                      <EventType val="N"/>
-                    </Event>
-                    <TaskID comp="-1" obj="187"/>
-                    <Lock val="N"/>
-                    <Arguments>
-                      <Argument>
-                        <Variable val="1"/>
-                        <Skip val="N"/>
-                      </Argument>
-                    </Arguments>
-                    <Wait val="Y"/>
-                    <SyncData val="N"/>
-                    <RetainFocus val="N"/>
-                    <Condition val="Y"/>
-                    <Modifier val="S"/>
-                    <Direction val="C"/>
-                  </CallTask>
-                </LogicLine>
                 <LogicLine>
                   <Update FlowIsn="5">
                     <FieldID val="2"/>
@@ -440,50 +494,60 @@
                     <Text val=" "/>
                   </Remark>
                 </LogicLine>
+                <LogicLine>
+                  <Update FlowIsn="14">
+                    <Parent val="1"/>
+                    <FieldID val="2"/>
+                    <WithValue val="4"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition Exp="5"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
+                <LogicLine>
+                  <Remark FlowIsn="16">
+                    <Type val="2"/>
+                    <Text val=" "/>
+                  </Remark>
+                </LogicLine>
+              </LogicLines>
+            </LogicUnit>
+            <LogicUnit id="4" propagate="78">
+              <Level val="T"/>
+              <Type val="P"/>
+              <Scope val="S"/>
+              <EngineDirective val="S"/>
+              <ShowMessage val="Y"/>
+              <Condition val="89"/>
+              <Event>
+                <EventType val="S"/>
+              </Event>
+              <LogicLines>
+                <LogicLine>
+                  <Update FlowIsn="15">
+                    <Parent val="1"/>
+                    <FieldID val="2"/>
+                    <WithValue val="6"/>
+                    <Incremental val="N"/>
+                    <ForcedUpdate val="Y"/>
+                    <Condition val="Y"/>
+                    <Modifier val="B"/>
+                    <Direction val="C"/>
+                  </Update>
+                </LogicLine>
               </LogicLines>
             </LogicUnit>
           </TaskLogic>
           <TaskForms>
-            <FormEntry _last_isn="7" _last_test_id="7" id="1">
+            <FormEntry _last_isn="13" _last_test_id="13" id="1">
               <PropertyList model="FORM_GUI0">
                 <Width id="23" val="973"/>
                 <Height id="24" val="373"/>
                 <_Comment id="218"/>
                 <FormName id="311" valUnicode="Driver"/>
               </PropertyList>
-              <Control _test_id="4" id="4">
-                <PropertyList model="CTRL_GUI0_STATIC">
-                  <Text id="19" valUnicode="v-bear token:"/>
-                  <X id="21" val="4"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="52"/>
-                  <Height id="24" val="9"/>
-                  <Style id="63" val="7"/>
-                  <EnableRTF id="69"/>
-                  <_Orientation id="143"/>
-                </PropertyList>
-              </Control>
-              <Control _test_id="1" id="1">
-                <PropertyList model="CTRL_GUI0_EDIT">
-                  <Model ID="MODEL_GUI_INT" id="1">
-                    <Var FieldID="1"/>
-                  </Model>
-                  <X id="21" val="67"/>
-                  <Y id="22" val="8"/>
-                  <Width id="23" val="800"/>
-                  <Height id="24" val="64"/>
-                  <Data FieldID="1" id="43"/>
-                  <ControlName id="46" val="v-bear token"/>
-                  <MultiLineEdit id="71" val="Y"/>
-                  <HorizontalScroll id="72"/>
-                  <VerticalScroll id="73" val="Y"/>
-                  <AllowCRInData id="74" val="Y"/>
-                  <_Orientation id="143"/>
-                  <ShowScrollBars id="273"/>
-                  <TabOrder id="314" val="1"/>
-                  <MultilineWordwrapScroll id="455" val="3"/>
-                </PropertyList>
-              </Control>
               <Control _test_id="5" id="5">
                 <PropertyList model="CTRL_GUI0_STATIC">
                   <Text id="19" valUnicode="v-http body:"/>
@@ -511,7 +575,7 @@
                   <VerticalScroll id="73" val="Y"/>
                   <AllowCRInData id="74" val="Y"/>
                   <_Orientation id="143"/>
-                  <TabOrder id="314" val="2"/>
+                  <TabOrder id="314" val="1"/>
                   <MultilineWordwrapScroll id="455" val="3"/>
                 </PropertyList>
               </Control>
@@ -527,21 +591,86 @@
                   <_Orientation id="143"/>
                 </PropertyList>
               </Control>
-              <Control _test_id="7" id="7">
-                <PropertyList model="CTRL_GUI0_EDIT">
+              <Control _test_id="9" id="9">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="rp-update successful"/>
                   <X id="21" val="67"/>
-                  <Y id="22" val="286"/>
-                  <Width id="23" val="800"/>
-                  <Height id="24" val="36"/>
-                  <Data Exp="3" id="43"/>
-                  <MultiLineEdit id="71" val="Y"/>
-                  <VerticalScroll id="73" val="Y"/>
-                  <AllowCRInData id="74" val="Y"/>
-                  <Format id="82" valUnicode="500"/>
-                  <Attribute id="83" val="85"/>
+                  <Y id="22" val="289"/>
+                  <Width id="23" val="80"/>
+                  <Height id="24" val="9"/>
+                  <Font id="50" val="1"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="192" _test_id="8" id="8">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="2" Parent="1"/>
+                  </Model>
+                  <X id="21" val="151"/>
+                  <Y id="22" val="289"/>
+                  <Width id="23" val="31"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="2" Parent="1" id="43"/>
+                  <ControlName id="46" val="rp-update successful"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="3"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="13" id="13">
+                <PropertyList model="CTRL_GUI0_STATIC">
+                  <Text id="19" valUnicode="p-cvent attendee id"/>
+                  <X id="21" val="271"/>
+                  <Y id="22" val="289"/>
+                  <Width id="23" val="75"/>
+                  <Height id="24" val="9"/>
+                  <Font id="50" val="1"/>
+                  <Style id="63" val="7"/>
+                  <EnableRTF id="69"/>
+                  <_Orientation id="143"/>
+                </PropertyList>
+              </Control>
+              <Control _test_id="12" id="12">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <Model ID="MODEL_GUI_INT" id="1">
+                    <Var FieldID="1" Parent="1"/>
+                  </Model>
+                  <X id="21" val="350"/>
+                  <Y id="22" val="289"/>
+                  <Width id="23" val="205"/>
+                  <Height id="24" val="10"/>
+                  <Data FieldID="1" Parent="1" id="43"/>
+                  <ControlName id="46" val="p-cvent attendee id"/>
                   <_Orientation id="143"/>
                   <TabOrder id="314" val="4"/>
-                  <MultilineWordwrapScroll id="455" val="3"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="1" _test_id="10" id="10">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <X id="21" val="67"/>
+                  <Y id="22" val="313"/>
+                  <Width id="23" val="26"/>
+                  <Height id="24" val="10"/>
+                  <Data Exp="7" id="43"/>
+                  <Format id="82" valUnicode="4"/>
+                  <Attribute id="83" val="78"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="5"/>
+                </PropertyList>
+              </Control>
+              <Control PDOD="128" _test_id="11" id="11">
+                <PropertyList model="CTRL_GUI0_EDIT">
+                  <X id="21" val="67"/>
+                  <Y id="22" val="334"/>
+                  <Width id="23" val="26"/>
+                  <Height id="24" val="10"/>
+                  <Data Exp="5" id="43"/>
+                  <Format id="82" valUnicode="5"/>
+                  <Attribute id="83" val="66"/>
+                  <_Orientation id="143"/>
+                  <TabOrder id="314" val="6"/>
                 </PropertyList>
               </Control>
               <Control PDOD="128" _test_id="3" id="3">
@@ -555,7 +684,7 @@
                   <Height id="24" val="94"/>
                   <Data FieldID="3" id="43"/>
                   <ControlName id="46" val="v-api response"/>
-                  <TabOrder id="314" val="3"/>
+                  <TabOrder id="314" val="2"/>
                 </PropertyList>
               </Control>
             </FormEntry>
@@ -566,12 +695,24 @@
               <ExpAttribute val="A"/>
             </Expression>
             <Expression id="2">
-              <ExpSyntax val="HTTPCall('PUT',Trim({32768,11})&amp;'/'&amp;Trim({1,1})&amp;'/internal-information-questions',Trim({0,2}),'Accept=application/json','Authorization:Bearer '&amp;Trim({0,1}))"/>
+              <ExpSyntax val="HTTPCall('PUT',Trim({32768,11})&amp;'/'&amp;Trim({1,1})&amp;'/internal-information-questions',Trim({0,2}),'Accept=application/json','Authorization:Bearer '&amp;Trim({1,3}))"/>
               <ExpAttribute val="O"/>
             </Expression>
-            <Expression id="3">
-              <ExpSyntax val="Trim({32768,11})&amp;'/'&amp;Trim({1,1})&amp;'/internal-information-questions'"/>
-              <ExpAttribute val="A"/>
+            <Expression id="4">
+              <ExpSyntax val="'TRUE'LOG"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="5">
+              <ExpSyntax val="InStr({0,3},'2c49ad3e-bac6-42db-bede-3b550e85db8b')>0"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="6">
+              <ExpSyntax val="'FALSE'LOG"/>
+              <ExpAttribute val="B"/>
+            </Expression>
+            <Expression id="7">
+              <ExpSyntax val="InStr({0,3},Trim({1,1}))"/>
+              <ExpAttribute val="N"/>
             </Expression>
           </Expressions>
         </Task>

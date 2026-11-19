@@ -2,13 +2,13 @@
  
 <Header>
 
-  <Version val="14080.00"/>
+  <Version val="14121.00"/>
 
   <WithIsn val="Y"/>
 
   <Exe comp="-1"/>
 
-  <LastIsn val="103"/>
+  <LastIsn val="104"/>
 
   <LastIsnFolder val="2"/>
 
@@ -44,6 +44,8 @@
   <ObjectType val="T"/>
 
   <Position val="D"/>
+
+  <PositionIndex val="-1"/>
 
   <Columns>
     <Column id="7" name="Status">
@@ -123,7 +125,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="Record" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
-        <JsonDefinition id="739"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="2"/>
         <Instance id="742" val="2"/>
       </PropertyList>
     </Column>
@@ -154,6 +157,8 @@
 
   <Position val="D"/>
 
+  <PositionIndex val="-1"/>
+
   <Columns>
     <Column id="1" name="Attributes">
       <PropertyList model="FIELD">
@@ -164,7 +169,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="Attributes" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
-        <JsonDefinition id="739"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="3"/>
         <Instance id="742" val="2"/>
       </PropertyList>
     </Column>
@@ -7428,6 +7434,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="venues" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="53"/>
       </PropertyList>
     </Column>
     <Column id="13" name="defaultLocale">
@@ -7451,6 +7459,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="languages" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="54"/>
       </PropertyList>
     </Column>
     <Column id="15" name="currency">
@@ -7538,6 +7548,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="planners" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="55"/>
       </PropertyList>
     </Column>
     <Column id="22" name="customFields">
@@ -7549,6 +7561,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="customFields" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="56"/>
       </PropertyList>
     </Column>
     <Column id="23" name="category">
@@ -7560,6 +7574,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="category" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="57"/>
       </PropertyList>
     </Column>
     <Column id="24" name="_links">
@@ -7571,6 +7587,8 @@
         <_Flip id="194"/>
         <_FieldPhysical Name="_links" Size="28" allowed_null="Y" attribute="O" context_cookies="Y" database_definition="1" id="231" storage="29"/>
         <_FieldStyle id="276" val="7"/>
+        <Content id="434" val="2"/>
+        <JsonDefinition comp="-1" id="739" obj="58"/>
       </PropertyList>
     </Column>
     <Column id="25" name="created">
@@ -10389,6 +10407,528 @@
         <Segment>
           <Size val="20"/>
           <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+      </Segments>
+    </Index>
+  </Indexes>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject FolderIsn="2" PhysicalName="Cvent_CRM_Extract_TEST" Resident="N" UniqueISNConvState="12" data_source="INHOUSEWEBSQL" id="104" name="Cvent_CRM_Extract_TEST">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="N"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <PositionIndex val="1"/>
+
+  <IndexesLastIsn val="1"/>
+
+  <MetaTreeRTIndex val="-1"/>
+
+  <Columns>
+    <Column id="1" name="Cvent Confirmation Number">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Cvent Confirmation Number]"/>
+        <Type id="179" val="VARCHAR(20)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Cvent Confirmation Number]" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="Cvent Parent Confirmation Num">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Cvent Parent Confirmation Num]"/>
+        <Type id="179" val="VARCHAR(20)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Cvent Parent Confirmation Num]" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="First Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[First Name]"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[First Name]" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="Last Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Last Name]"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Last Name]" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="Email">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Email"/>
+        <Type id="179" val="VARCHAR(100)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Email" PIC_U="100" Size="100" SqlType="VARCHAR(100)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="Admission Item">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="70"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="70"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Admission Item]"/>
+        <Type id="179" val="VARCHAR(70)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Admission Item]" PIC_U="70" Size="70" SqlType="VARCHAR(70)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="Invitee Status">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Invitee Status]"/>
+        <Type id="179" val="VARCHAR(20)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Invitee Status]" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="Cell Phone">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Cell Phone]"/>
+        <Type id="179" val="VARCHAR(20)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Cell Phone]" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Dietary">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Dietary"/>
+        <Type id="179" val="VARCHAR(100)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Dietary" PIC_U="100" Size="100" SqlType="VARCHAR(100)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="Job Title">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Job Title]"/>
+        <Type id="179" val="VARCHAR(100)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Job Title]" PIC_U="100" Size="100" SqlType="VARCHAR(100)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="Company">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="200"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Company"/>
+        <Type id="179" val="VARCHAR(200)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Company" PIC_U="200" Size="200" SqlType="VARCHAR(200)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="Work Address 1">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Work Address 1]"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Work Address 1]" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="Work Address 2">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Work Address 2]"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Work Address 2]" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="Work City">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Work City]"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Work City]" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="Work State">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Work State]"/>
+        <Type id="179" val="VARCHAR(20)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Work State]" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="Work Zip">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="10"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="10"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Work Zip]"/>
+        <Type id="179" val="VARCHAR(10)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Work Zip]" PIC_U="10" Size="10" SqlType="VARCHAR(10)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="17" name="Work Phone">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="20"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Work Phone]"/>
+        <Type id="179" val="VARCHAR(20)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Work Phone]" PIC_U="20" Size="20" SqlType="VARCHAR(20)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="18" name="Synced">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="3"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Synced"/>
+        <Type id="179" val="VARCHAR(3)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Synced" PIC_U="3" Size="3" SqlType="VARCHAR(3)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="19" name="Meeting Date">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="##/##/####"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Meeting Date]"/>
+        <Type id="179" val="DATE"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Meeting Date]" PIC_U="##/##/####" Size="8" SqlType="DATE" allowed_null="Y" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="20" name="Meeting Name">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="150"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="150"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="[Meeting Name]"/>
+        <Type id="179" val="VARCHAR(150)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="[Meeting Name]" PIC_U="150" Size="150" SqlType="VARCHAR(150)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="21" name="Cvent_Synced">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="3"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="3"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Cvent_Synced"/>
+        <Type id="179" val="VARCHAR(3)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Cvent_Synced" PIC_U="3" Size="3" SqlType="VARCHAR(3)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+    <Column id="22" name="Attendee_ID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Modifiable id="53" val="Y"/>
+        <Range id="98"/>
+        <Picture id="157" valUnicode="50"/>
+        <NullAllowed id="166" val="Y"/>
+        <NullDefault id="169" val="Y"/>
+        <DatabaseDefault id="171"/>
+        <CharSet id="172" val="1"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="50"/>
+        <Definition id="175" val="2"/>
+        <DatabaseInformation id="177"/>
+        <DbColumnName id="178" val="Attendee_ID"/>
+        <Type id="179" val="VARCHAR(50)"/>
+        <UserType id="180"/>
+        <_FieldPhysical Name="Attendee_ID" PIC_U="50" Size="50" SqlType="VARCHAR(50)" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <PartOfDatetime id="244"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes>
+    <Index id="1" name="NonClusteredIndex-20260731-1024">
+      <Mode val="S"/>
+      <Order val="T"/>
+      <Range val="Q"/>
+      <IndexType val="R"/>
+      <PhysicalName val="NonClusteredIndex-20260731-102436"/>
+      <HasHint val="N"/>
+      <Clustered val="N"/>
+      <DropOnReindex val="Y"/>
+      <Primary val="N"/>
+      <Segments>
+        <Segment>
+          <Size val="20"/>
+          <Column val="1"/>
+          <Order val="A"/>
+        </Segment>
+        <Segment>
+          <Size val="20"/>
+          <Column val="2"/>
           <Order val="A"/>
         </Segment>
       </Segments>

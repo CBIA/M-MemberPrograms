@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14080.00"/>
+    <Version val="14121.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -14,6 +14,7 @@
     <Programs>
       <Task MainProgram="N">
         <Header Description="Get Event list on and after system date API" ISN_2="1" LastIsn="2" id="216">
+          <LastModified _date="739937" _time="62327" date="11/17/2026" time="17:18:47"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -31,7 +32,6 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739873" _time="50209" date="09/14/2026" time="13:56:49"/>
         </Header>
         <ItemIsn val="5"/>
         <Resource>
@@ -79,6 +79,7 @@
           </Sort>
           <ForceRecordDelete DEL="N"/>
           <EndTaskCondition val="Y"/>
+          <SkipLockedRecords val="N"/>
           <EvaluateEndCondition val="A"/>
           <InitialMode val="E"/>
           <Locate Direction="A"/>
@@ -309,6 +310,7 @@
         </Expressions>
         <Task MainProgram="N">
           <Header Description="Driver" ISN_2="2" LastIsn="2" id="216">
+            <LastModified _date="739937" _time="62327" date="11/17/2026" time="17:18:47"/>
             <ExecutionRight comp="-1"/>
             <Resident val="N"/>
             <SQL val="N"/>
@@ -321,7 +323,6 @@
             <External val="N"/>
             <FormType val="N"/>
             <DotNetObjectExists val="N"/>
-            <LastModified _date="739835" _time="32453" date="08/07/2026" time="09:00:53"/>
           </Header>
           <ItemIsn val="2"/>
           <Resource>
@@ -363,6 +364,7 @@
             </Sort>
             <ForceRecordDelete DEL="N"/>
             <EndTaskCondition val="Y"/>
+            <SkipLockedRecords val="N"/>
             <EvaluateEndCondition val="A"/>
             <InitialMode val="E"/>
             <Locate Direction="A"/>
@@ -383,7 +385,7 @@
               <KeepCreatedContext val="N"/>
             </TaskProperties>
             <SIDE_WIN>
-              <AllowOptions val="N"/>
+              <AllowOptions val="Y"/>
               <AllowQuery val="Y"/>
               <AllowModify val="Y"/>
               <AllowCreate val="Y"/>
@@ -400,7 +402,7 @@
               <AllowPrintingData val="N"/>
             </SIDE_WIN>
             <WIN>
-              <OpenTaskWindow val="N"/>
+              <OpenTaskWindow val="Y"/>
               <CloseTaskWindow val="Y"/>
               <ForegroundWindow val="Y"/>
               <FlipFld val="N"/>

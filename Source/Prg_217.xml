@@ -2,7 +2,7 @@
 <Application>
 
   <Header>
-    <Version val="14080.00"/>
+    <Version val="14121.00"/>
     <WithIsn val="Y"/>
     <_InternalTask val="N"/>
     <IsRoot val="N"/>
@@ -13,7 +13,8 @@
   <ProgramsRepository>
     <Programs>
       <Task MainProgram="N">
-        <Header Description="Get Event List DRIVER" ISN_2="1" LastIsn="1" id="217">
+        <Header Description="Get Event List DRIVER ********NOT USED JSON PARSING PROBLEM************" ISN_2="1" LastIsn="1" id="217">
+          <LastModified _date="739941" _time="75662" date="11/21/2026" time="21:01:02"/>
           <ExecutionRight comp="-1"/>
           <Resident val="N"/>
           <SQL val="N"/>
@@ -30,7 +31,6 @@
           <Offline val="N"/>
           <FormType val="N"/>
           <DotNetObjectExists val="N"/>
-          <LastModified _date="739859" _time="57636" date="08/31/2026" time="16:00:36"/>
         </Header>
         <ItemIsn val="3"/>
         <Resource>
@@ -66,6 +66,7 @@
           </Sort>
           <ForceRecordDelete DEL="N"/>
           <EndTaskCondition val="Y"/>
+          <SkipLockedRecords val="N"/>
           <EvaluateEndCondition val="A"/>
           <InitialMode val="E"/>
           <Locate Direction="A"/>
@@ -230,7 +231,7 @@
           <FormEntry id="1">
             <PropertyList model="FORM_GUI0">
               <_Comment id="218"/>
-              <FormName id="311" valUnicode="Get Event List DRIVER"/>
+              <FormName id="311" valUnicode="Get Event List DRIVER -**********NOT USED JSON PARSING PROBLEM************"/>
             </PropertyList>
           </FormEntry>
         </TaskForms>
